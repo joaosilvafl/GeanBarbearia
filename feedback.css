@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+header{
+    background-color: darkgray;
+    padding-bottom: 100px;
+}
+
+header h1{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.menu{
+    display: flex;
+}
+
+.parte1 nav a{
+    margin-left: 250px;
+    text-decoration: none;
+    color: darkblue;
+}
+
+.parte1 h3{
+    margin-left: 900px;
+    margin-top: -20px;
+}
+
+.parte2 nav a{
+    margin-left: 250px;
+    text-decoration: none;
+    color: darkblue;
+}

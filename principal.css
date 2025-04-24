@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'GrandParadiso-Regular';
+    src: url('fonts/GrandParadiso-Regular.woff') format('truetype');
+}
+@font-face {
+    font-family: 'jodie-garland-jodie-garland-regular-400';
+    src: url('fonts/jodie-garland-jodie-garland-regular-400.ttf') format('truetype');
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    font-size: 100%;
+    background-color: darkgray;
+}
+
+header img {
+    max-height: 80px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+ }
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px; }
+
+
+header nav a{
+    font-family: "GrandParadiso-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    background-color:#6e6e6e;
+    width: 180px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-color: darkgray;
+    margin-bottom: 48px;
+    border-top: 0.4px solid #2c2a2a;
+}
+
+.historiaBarbearia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* alinha topo da imagem com topo do texto */
+    justify-content: space-between;
+    padding: 40px; /* adiciona espaço interno nas bordas */
+    gap: 40px; /* espaço entre imagem e texto */
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza no meio da tela */
+}
+
+.historiaBarbearia img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
+}
+
+.conteudo-escrito {
+    flex: 1; /* faz o texto ocupar o resto do espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.texto-1 {
+    font-family: "GrandParadiso-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+}
+.titulo-historiaBarbearia {
+    font-family: "jodie-garland-jodie-garland-regular-400", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    color: white;
+}
+
+.historiaMeioBarbearia {
+    padding-top:90px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* alinha topo da imagem com topo do texto */
+    justify-content: space-between;
+    padding: 40px; /* adiciona espaço interno nas bordas */
+    gap: 40px; /* espaço entre imagem e texto */
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza no meio da tela */
+}
+
+.historiaMeioBarbearia img{
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
+}
+
+.conteudo-escrito-meio {
+    font-family: "GrandParadiso-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+
+
+.historiaHojeBarbearia{
+    padding-top:90px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* alinha topo da imagem com topo do texto */
+    justify-content: space-between;
+    padding: 40px; /* adiciona espaço interno nas bordas */
+    gap: 40px; /* espaço entre imagem e texto */
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza no meio da tela */
+}
+
+.historiaHojeBarbearia img{
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
+}
+.historiaHojeBarbearia div p{
+    font-family: "GrandParadiso-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+footer{
+    background-color: aqua;
+    padding: 60px;
+    display: flex;
+}
