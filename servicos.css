@@ -1,56 +1,124 @@
-*{
+@font-face {
+    font-family: 'GrandParadiso-Regular';
+    src: url('fonts/GrandParadiso-Regular.woff') format('truetype');
+}
+@font-face {
+    font-family: 'jodie-garland-jodie-garland-regular-400';
+    src: url('fonts/jodie-garland-jodie-garland-regular-400.ttf') format('truetype');
+    
+}
+* {
     margin: 0;
-    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 header{
+    font-size: 100%;
     background-color: darkgray;
-    padding-bottom: 100px;
 }
 
-header h1{
-    padding-top: 60px;
-    text-align: center;
-    padding-bottom: 60px;
+header img {
+    max-height: 80px;
 }
 
-.menu{
+.cabecalho {
     display: flex;
-}
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+ }
 
-header h3{
-   margin-top: -5px;
-   margin-left: 190px;
-}
+.cabecalho-menu {
+    display: flex;
+    gap: 32px; }
+
 
 header nav a{
-    text-decoration: none;
-    color: darkblue;
-    margin-left: 300px;
+    font-family: "GrandParadiso-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    background-color:#6e6e6e;
+    width: 180px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
-    background-color: darkgray;
+        background-color: darkgray;
+        margin-bottom: 48px;
+        border-top: 0.4px solid #2c2a2a;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.imagem-elemento{
+    max-width: 100%;
+    max-height: 500px;
+  
+}
+
+.imagem-utensilios{
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 60px
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-family: "jodie-garland-jodie-garland-regular-400", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    color: white;
 }
 
 .servicos{
     display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* alinha topo da imagem com topo do texto */
+    justify-content: space-between;
+    padding: 40px; /* adiciona espaço interno nas bordas */
+    gap: 40px; /* espaço entre imagem e texto */
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza no meio da tela */
 }
 
 .corteCabelo img{
-    height: 400px;
-    width: 600px;
-    margin-left: 100px;
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
 }
 
 .corteCabelo p{
-    margin-left: 300px
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
 }
 
 .corteBarba img{
-    height: 400px;
-    width: 600px;
-    margin-left: 100px;
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
 }
 
 .corteBarba p{
@@ -59,9 +127,13 @@ main{
 }
 
 .video video{
-    width: 1000px;
-    margin-left: 230px;
-    margin-bottom: 60px;
+    display: flex;
+    margin: 0 auto; /* centraliza no meio da tela */
+    max-width: 1200px;
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px; /* opcional: deixa a imagem com cantos arredondados */
+    object-fit: cover;
 }
 
 footer{
