@@ -20,7 +20,7 @@ body {
 background: 
 url('imagens/patternbackground.png') repeat-y,
  #8d8c8c;
- background-size: 1350px;
+ background-size: 1600px;
  background-position: top;
  
 }
@@ -169,7 +169,7 @@ footer{
 }
 
 #footer_content{
-    background-color: black;
+    background-color: rgb(73, 73, 73);
     display: grid;
     gap: 0.5rem;
     grid-template-columns: repeat(3,1fr);
@@ -246,8 +246,8 @@ footer{
 #footer_copyright{
     display: flex;
     justify-content: center;
-    color: black;
-    background-color: darkgray;
+    color: white;
+    background-color: black;
     font-size: 0.9rem;
     padding: 0.25rem;
     font-weight: 100
