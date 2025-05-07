@@ -68,11 +68,6 @@ main{
         border-top: 0.4px solid #2c2a2a;
 }
 
-.parte1 h3{
-    margin-left: 900px;
-    margin-top: -20px;
-}
-
 .parte2 nav a{
     margin-left: 250px;
     text-decoration: none;
@@ -97,13 +92,12 @@ main{
     height: 215px;
     border-radius: 50%;
     margin-top: 90px;
-    margin-left: 100px;
+    margin-left: 30px;
     display: flex;
 }
 
 .Feedback .Imagem-Feedback p{
     font-family: "GrandParadiso-Regular", sans-serif;
-    margin-top: 130px;
     margin-left: 10px;
     font-size: 24px;
 }
@@ -120,13 +114,43 @@ main{
     display: flex;
 }
 
+.star_1 .star-rating{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.star_2 .star-rating{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.star_3 .star-rating{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.star_4 .star-rating{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.star_5 .star-rating{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+.star_6 .star-rating{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
 .div_formulario h1{
     font-family: "GrandParadiso-Regular", sans-serif;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 150px;
     background-color: #2c2a2a;
     border-radius: 10px;
     margin-left: 500px;
@@ -135,43 +159,56 @@ main{
 
 .box_avaliacao{
     display: flex;
+    padding-top: 75px;
+    padding-bottom: 150px;
 }
 
 .box_avaliacao img{
     height: 350px;
-    width: 350px;
+    width: 450px;
     margin-top: 80px;
     margin-left: 150px;
+    border: 2px solid darkgray;
 }
 
 .box_nome{
-    margin-left: 400px;
-    margin-top: 50px;
+    margin-left: 300px;
+    margin-top: 65px;
 }
 
 .box_avaliacao .box_formulario .box_nome label{
-    color: white;
+    font-size: 30px;
 }
 
 .box_avaliacao .box_formulario .box_nome input{
     height: 30px;
     width: 500px;
+    border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(220, 220, 220);
+    font-size: 20px;
 }
 
 .box_avaliacao .box_formulario .box_nome input::placeholder{
     position: relative;
+    top: 1px;
     padding-left: 5px;
+    font-size: 20px;
 }
 
 .box_questionario{
-    margin-left: 400px;
+    margin-left: 300px;
+}
+
+.box_avaliacao .box_formulario .box_questionario label{
+    font-size: 30px;
 }
 
 .box_avaliacao .box_formulario .box_questionario textarea{
     display: flex;
     justify-content: center;
+    font-size: 20px;
+    border: 2px solid black;
     height: 200px;
     width: 500px;
     border-radius: 10px;
@@ -182,11 +219,14 @@ main{
 .box_avaliacao .box_formulario .box_questionario textarea::placeholder{
     position: relative;
     padding-left: 5px;
+    font-size: 20px;
 }
 
 .box_avaliacao button{
-    margin-left: 400px;
+    margin-left: 300px;
+    font-size: 15px;
     padding: 12px 32px;
+    border: 2px solid black;
     border-radius: 10px;
     background-color: rgb(220, 220, 220);
 }
