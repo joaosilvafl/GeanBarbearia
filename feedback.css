@@ -120,6 +120,82 @@ main{
     display: flex;
 }
 
+.div_formulario h1{
+    font-family: "GrandParadiso-Regular", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    background-color: #2c2a2a;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.box_avaliacao{
+    display: flex;
+}
+
+.box_avaliacao img{
+    height: 350px;
+    width: 350px;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.box_nome{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.box_avaliacao .box_formulario .box_nome label{
+    color: white;
+}
+
+.box_avaliacao .box_formulario .box_nome input{
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+}
+
+.box_avaliacao .box_formulario .box_nome input::placeholder{
+    position: relative;
+    padding-left: 5px;
+}
+
+.box_questionario{
+    margin-left: 400px;
+}
+
+.box_avaliacao .box_formulario .box_questionario textarea{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+
+}
+
+.box_avaliacao .box_formulario .box_questionario textarea::placeholder{
+    position: relative;
+    padding-left: 5px;
+}
+
+.box_avaliacao button{
+    margin-left: 400px;
+    padding: 12px 32px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+}
+
+.box_avaliacao button:hover{
+    background-color: #2c2a2a;
+    color: white;
+}
+
 footer{
     width: 100%;
     color: white;
