@@ -237,7 +237,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
     gap: 1.5rem;
 }
 #input_group{
