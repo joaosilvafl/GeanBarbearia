@@ -122,14 +122,21 @@ main{
 }
 
 .servicos{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 60px;
+    gap: 40px;
     padding-top: 200px;
     padding-bottom: 200px;
     position: relative;
+    padding-left: 100px;
+    padding-right: 160px;
 }
 
 .corte_cabelo{
@@ -145,6 +152,12 @@ main{
 }
 
 .quimicas{
+    position: relative;
+    width: 350px;
+    height: 500px;
+}
+
+.sombrancelha{
     position: relative;
     width: 350px;
     height: 500px;
@@ -305,6 +318,59 @@ main{
 }
 
 .servicos .quimicas button:hover{
+    background-color: #2c2a2a;
+    color: white;
+}
+
+.servicos .sombrancelha .logo_white {
+    position: absolute;
+    height: 125px;
+    margin-left: 125px;
+    width: 100px;
+    z-index: 1;
+}
+
+.servicos .sombrancelha .pattern{
+    position: absolute;
+    margin-left: 100px;
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.servicos .sombrancelha h1{
+    font-family: "GrandParadiso-Regular", sans-serif;
+    color: white;
+    margin-left: 125px;
+    margin-top: 280px;
+    font-size: 40px;
+    position: absolute;
+    z-index: 2;
+}
+
+.servicos .sombrancelha p{
+    font-family: "GrandParadiso-Regular", sans-serif;
+    color: white;
+    margin-left: 125px;
+    margin-top: 310px;
+    font-size: 35px;
+    position: absolute;
+    z-index: 2;
+}
+
+.servicos .sombrancelha button{
+    position: absolute;
+    z-index: 2;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: rgb(220, 220, 220);
+    padding: 16px 32px;
+    margin-left: 125px;
+    margin-top: 380px;
+}
+
+.servicos .sombrancelha button:hover{
     background-color: #2c2a2a;
     color: white;
 }
