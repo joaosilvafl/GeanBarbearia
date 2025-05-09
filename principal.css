@@ -318,6 +318,14 @@ footer{
       padding: 1rem;
       font-size: 1rem;
     }
+    .historiaBarbearia,
+    .historiaMeioBarbearia,
+    .historiaHojeBarbearia {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
   
     iframe {
       width: 100%;
