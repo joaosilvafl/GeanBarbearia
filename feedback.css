@@ -25,8 +25,12 @@ body {
 }
 
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     font-size: 100%;
     background-color: darkgray;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header img {
@@ -38,7 +42,7 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
+    padding: 16px;
  }
 
 .cabecalho-menu {
@@ -63,9 +67,9 @@ header nav a{
 }
 
 main{
-    
-        margin-bottom: 48px;
-        border-top: 0.4px solid #2c2a2a;
+    padding-top: 115px;
+    margin-bottom: 48px;
+    border-top: 0.4px solid #2c2a2a;
 }
 
 .parte2 nav a{
