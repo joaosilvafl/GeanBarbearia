@@ -291,6 +291,16 @@ footer{
     height: 100%;
     border: 0;
   }
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
 /* footer{
     font-family: "GrandParadiso-Regular", sans-serif;
     font-weight: 400;
@@ -301,3 +311,4 @@ footer{
     display: flex;
     align-items: center;
 } */
+

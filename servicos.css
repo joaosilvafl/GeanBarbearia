@@ -601,6 +601,16 @@ footer{
   html {
     scroll-behavior: smooth;
   }
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
 /* footer{
     font-family: "GrandParadiso-Regular", sans-serif;
     font-weight: 400;
