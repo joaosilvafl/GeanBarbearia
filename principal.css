@@ -168,6 +168,25 @@ h2{ display: flex;
     font-size: 50px;
     color: white;   
 }
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .voltar-topo:hover {
+    background-color: black;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 footer{
     width: 100%;
     color: white;
