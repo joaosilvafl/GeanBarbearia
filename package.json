@@ -1,0 +1,25 @@
+{
+  "name": "site-da-barbearia-gean",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao site oficial da Barbearia do Gean! Aqui você encontra estilo, tradição e qualidade em cada corte.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaosilvafl/GeanBarbearia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaosilvafl/GeanBarbearia/issues"
+  },
+  "homepage": "https://github.com/joaosilvafl/GeanBarbearia#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jquery": "^3.7.1",
+    "pg": "^8.16.0"
+  },
+  "keywords": []
+}
