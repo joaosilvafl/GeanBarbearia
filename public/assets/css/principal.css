@@ -141,7 +141,7 @@ main{
     max-width: 100%; /*Largura máxima definida em 100%*/
     max-height: 400px; /*Altura máxima definida em 400px*/
     border-radius: 10px; /*Deixa a imagem com cantos arredondados*/
-    object-fit: cover;
+    object-fit: cover; /*Controla o conteúdo de um elemento substitutível*/
 }
 
 /*Classe conteudo-escrito-meio*/
