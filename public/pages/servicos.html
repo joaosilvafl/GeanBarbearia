@@ -10,8 +10,7 @@
 <body id="topo">
     <header class="cabecalho">
             <a href="index.html">
-            <img class="cabecalho-imagem" src="/public/assets/css/imagens/Logo01.png" alt=""> <!--Imagem está dando problema, resolver mais tarde-->
-            </a>
+            <img class="cabecalho-imagem" src="/public/assets/css/imagens/Logo01.png" alt=""> </a>
             <nav class="cabecalho-menu">
                 <a href="servicos.html">Agende um serviço!</a>
                 <a href="#footer-header">Contatos</a>
@@ -37,7 +36,7 @@
                 <h1>Corte de Cabelo</h1>
                 <br>
                 <p>R$30,00</p>
-                <button><strong>Agendar</strong></button>
+                <button class="agendar-btn" data-nome-servico="Corte de Cabelo" data-valor-servico="30.00"><strong>Agendar</strong></button>
             </div>
             <div class="corte_barba">
                 <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
@@ -45,7 +44,7 @@
                 <h1>Corte de Barba</h1>
                 <br>
                 <p>R$25,00</p>
-                <button><strong>Agendar</strong></button>
+                <button class="agendar-btn" data-nome-servico="Corte de Barba" data-valor-servico="25.00"><strong>Agendar</strong></button>
             </div>
             <div class="quimicas">
                 <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
@@ -53,7 +52,7 @@
                 <h1>Químicos</h1>
                 <br>
                 <p>R$100,00</p>
-                <button><strong>Agendar</strong></button>
+                <button class="agendar-btn" data-nome-servico="Químicos" data-valor-servico="100.00"><strong>Agendar</strong></button>
             </div>
             <div class="sombrancelha">
                 <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
@@ -61,14 +60,61 @@
                 <h1>Sombrancelha</h1>
                 <br>
                 <p>R$10,00</p>
-                <button><strong>Agendar</strong></button>
+                <button class="agendar-btn" data-nome-servico="Sobrancelha" data-valor-servico="10.00"><strong>Agendar</strong></button>
             </div>
         </div>
+
+        <section id="agendamento-form-section" style="padding: 50px; background-color: #f0f0f0; margin-top: 50px; border-radius: 10px; max-width: 90%; margin-left: auto; margin-right: auto;">
+            <h2 style="text-align: center; font-family: 'GrandParadiso-Regular', sans-serif; color: #2c2a2a; margin-bottom: 30px; font-size: 40px;">Agende seu Serviço</h2>
+
+            <div style="background-color: #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+                <h3 style="margin-bottom: 15px; font-family: sans-serif;">Dados do Cliente</h3>
+                <form id="cliente-form" style="display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: 0 auto;">
+                    <label for="cliente_nome_input" style="font-family: sans-serif; font-size: 16px;">Nome Completo:</label>
+                    <input type="text" id="cliente_nome_input" name="nome" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+
+                    <label for="cliente_email_input" style="font-family: sans-serif; font-size: 16px;">Email (Opcional):</label>
+                    <input type="email" id="cliente_email_input" name="email" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+
+                    <label for="cliente_telefone_input" style="font-family: sans-serif; font-size: 16px;">Telefone (Opcional):</label>
+                    <input type="tel" id="cliente_telefone_input" name="telefone" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="Ex: 99999999999" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+
+                    <button type="submit" id="salvar_cliente_btn" style="background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Salvar Cliente</button>
+                </form>
+
+                <h4 style="margin-top: 25px; margin-bottom: 10px; font-family: sans-serif;">Ou Selecione um Cliente Existente:</h4>
+                <select id="select_cliente" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+                    <option value="">-- Selecione um Cliente --</option>
+                </select>
+                <input type="hidden" id="selected_cliente_id">
+            </div>
+
+            <form id="agendamento-form" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;">
+                <label for="nome_servico_selecionado" style="font-family: sans-serif; font-size: 18px;">Serviço:</label>
+                <input type="text" id="nome_servico_selecionado" readonly required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #e9e9e9;">
+                <input type="hidden" id="selected_servico_id">
+
+                <label for="valor_servico_selecionado" style="font-family: sans-serif; font-size: 18px;">Valor:</label>
+                <input type="text" id="valor_servico_selecionado" readonly required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #e9e9e9;">
+
+                <label for="data_agendamento" style="font-family: sans-serif; font-size: 18px;">Data:</label>
+                <input type="date" id="data_agendamento" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+                <label for="hora_agendamento" style="font-family: sans-serif; font-size: 18px;">Hora:</label>
+                <input type="time" id="hora_agendamento" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+
+                <button type="submit" style="background-color: #2c2a2a; color: white; padding: 15px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 20px; margin-top: 20px;">Confirmar Agendamento</button>
+            </form>
+
+            <h2 style="text-align: center; font-family: 'GrandParadiso-Regular', sans-serif; color: #2c2a2a; margin-top: 50px; margin-bottom: 20px; font-size: 40px;">Meus Agendamentos</h2>
+            <div id="lista-agendamentos" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+                </div>
+        </section>
     </main>
 
     <footer id="footer-header">
         <div id="footer_content">
-            <div id="footer_contatos"> 
+            <div id="footer_contatos">
                 <h3>Entre em contato conosco</h3>
                 <p>Siga-nos em nossas redes sociais</p>
                 <div id="footer_rede_social">
@@ -90,9 +136,6 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.6983281645844!2d-49.309997925082875!3d-16.641902684123632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef36e7354488f%3A0xcd463b86d2bf2847!2sUNIALFA%20Unidade%20Perimetral!5e0!3m2!1spt-BR!2sbr!4v1745476374732!5m2!1spt-BR!2sbr" width="1350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <!-- <div class="footer_mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.6983281645844!2d-49.309997925082875!3d-16.641902684123632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef36e7354488f%3A0xcd463b86d2bf2847!2sUNIALFA%20Unidade%20Perimetral!5e0!3m2!1spt-BR!2sbr!4v1745476374732!5m2!1spt-BR!2sbr" width="1350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
             <div id="footer_enviar">
                 <div id="input_group">
                     <input type="email" id="email" placeholder="Seu e-mail">
@@ -101,13 +144,15 @@
                     </button>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <div id="footer_copyright">
-            &#169
+            ©
             Gean Barbearia 2025 .Todos os dieitos reservados
         </div>
     </footer>
     <a href="#topo" class="voltar-topo" title="Voltar ao topo"> ↑</a>
+
+    <script src="/public/assets/js/agendamento.js"></script>
 </body>
 </html>
