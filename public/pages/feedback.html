@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--Head da página-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/public/assets/css/feedback.css">
-    <title>Feedback - Gean Barbearia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!--Biblioteca para usar elementos no HTML e CSS-->
+    <link rel="stylesheet" href="/public/assets/css/feedback.css"> <!--Conexão entre o HTML com o CSS-->
+    <title>Feedback - Gean Barbearia</title> <!--Título da página-->
 </head>
-<body id="topo">
+<!--Body da página-->
+<body id="topo"> <!--Id referente ao botão de voltar ao topo-->
+    <!--Cabeçalho-->
     <header class="cabecalho">
+        <!--href para voltar a página principal-->
         <a href="index.html">
-        <img  class="cabecalho-imagem" src="/public/assets/css/imagens/Logo01.png" alt=""> <!--Imagem está dando problema, resolver mais tarde-->
+        <img class="cabecalho-imagem" src="/public/assets/css/imagens/Logo01.png" alt=""> <!--Imagem da logo-->
         </a>
+        <!--nav para navegar entre páginas-->
         <nav class="cabecalho-menu">
-            <a href="servicos.html">Agende um serviço!</a>
-            <a href="#footer-header">Contatos</a>
-            <a href="feedback.html">Feedback</a>
+            <a href="servicos.html">Agende um serviço!</a> <!--href para ir ou voltar para a página de serviços-->
+            <a href="#footer-header">Contatos</a> <!--href para ir ou voltar para a aba de contato das páginas-->
+            <a href="feedback.html">Feedback</a> <!--href para ir ou voltar para a página de feedback-->
         </nav>
     </header>
 
+    <!--Corpo da página-->
     <main>
-       <div class="Feedback">
+        <!--Div do título do Feedback-->
+        <div class="Feedback">
+            <!--Div do título-->
             <div class="Titulo-Feedback">
-                <h1>Avaliações</h1>
+                <h1>Avaliações</h1> <!--Título do feedback-->
             </div>
+            <!--Div principal do Feedback-->
             <div class="Imagem-Feedback">
+                <!--Div da linha 1-->
                 <div class="Bloco_1">
-                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="">
+                    <img src="/public/assets/css/imagens/TestePessoas.png" alt=""> <!--Imagem do Feedback-->
+                    <!--Div individual de cada avaliação-->
                     <div class="star_1">
-                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">Luís</p>
+                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">Luís</p> <!--Nome da pessoa-->
+                        <!--Texto da avaliaçaõ-->
                         <p style="font-size: 34px;">A Gean Barbearia é simplesmente sensacional! Atendimento impecável, corte perfeito e ambiente super agradável. Cliente fiel a partir de agora!</p>
                         <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;">
                             <span class="fa fa-star checked"></span>
@@ -38,50 +50,64 @@
                             <span class="fa fa-star checked"></span>
                           </div>
                     </div>
-                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="" style="margin-left: 75px;">
+                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="" style="margin-left: 75px;"> <!--Imagem do Feedback-->
+                    <!--Div individual de cada avaliação-->
                     <div class="star_2">
-                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px">Felipe</p>
+                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px">Felipe</p> <!--Nome da pessoa-->
+                        <!--Texto da avaliaçaõ-->
                         <p style="font-size: 34px;">Sempre que venho na Gean Barbearia, saio satisfeito. Profissionalismo, pontualidade e um ótimo papo enquanto corto o cabelo!</p>
-                        <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;">
+                        <!--Estrelas da biblioteca cdnjs-->
+                        <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;"> 
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                          </div>
+                        </div>
                     </div>
                 </div>
+                <!--Div da linha 2-->
                 <div class="Bloco_2">
-                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="">
+                    <img src="/public/assets/css/imagens/TestePessoas.png" alt=""> <!--Imagem do Feedback-->
+                    <!--Div individual de cada avaliação-->
                     <div class="star_3">
-                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">Marcos</p>
+                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">Marcos</p> <!--Nome da pessoa-->
+                        <!--Texto da avaliaçaõ-->
                         <p style="font-size: 34px;">Agendei pelo site com facilidade e fui muito bem atendido. A Gean Barbearia realmente entrega qualidade e atenção aos detalhes.</p>
+                        <!--Estrelas da biblioteca cdnjs-->
                         <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                          </div>
+                        </div>
                     </div>
-                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="" style="margin-left: 100px;">
+                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="" style="margin-left: 100px;"> <!--Imagem do Feedback-->
+                    <!--Div individual de cada avaliação-->
                     <div class="star_4">
                         <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">José</p>
+                        <!--Texto da avaliaçaõ-->
                         <p style="font-size: 34px;">Excelente atendimento e ambiente acolhedor. O Gean entende exatamente o estilo que a gente quer. Recomendo demais!</p>
+                        <!--Estrelas da biblioteca cdnjs-->
                         <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                          </div>
+                        </div>
                     </div>
                 </div>
+                <!--Div da linha 3-->
                 <div class="Bloco_3">
-                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="">
+                    <img src="/public/assets/css/imagens/TestePessoas.png" alt=""> <!--Imagem do Feedback-->
+                    <!--Div individual de cada avaliação-->
                     <div class="star_5">
-                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">Paulo</p>
+                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">Paulo</p> <!--Nome da pessoa-->
+                        <!--Texto da avaliaçaõ-->
                         <p style="font-size: 34px;" >Sou cliente da Gean Barbearia há meses e nunca me decepcionei. Cortes bem feitos, barba alinhada e um serviço de primeira.</p>
+                        <!--Estrelas da biblioteca cdnjs-->
                         <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -90,10 +116,13 @@
                             <span class="fa fa-star checked"></span>
                           </div>
                     </div>
-                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="" style="margin-left: 25px;">
+                    <img src="/public/assets/css/imagens/TestePessoas.png" alt="" style="margin-left: 25px;"> <!--Imagem do Feedback-->
+                    <!--Div individual de cada avaliação-->
                     <div class="star_6">
-                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">João</p>
+                        <p style="margin-top: 110px; margin-left: 200px; font-size: 34px;">João</p> <!--Nome da pessoa-->
+                        <!--Texto da avaliaçaõ-->
                         <p style="font-size: 34px;">Ambiente limpo, organizado e atendimento nota 10! O Gean é muito profissional e atencioso. Vale cada visita!</p>
+                        <!--Estrelas da biblioteca cdnjs-->
                         <div class="star-rating" style="display: flex; color: #ff9529; font-size: 1.4rem;">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -104,76 +133,91 @@
                     </div>
                 </div>
             </div>
-       </div>
-       <div class="div_formulario">
-            <h1>Deixe a sua avaliação da nossa empresa</h1>
-       </div>
-       <div class="box_avaliacao">
-        <div>
-            <img src="/public/assets/css/imagens/fachada.png" alt="">
         </div>
+        <!--Div do título da avaliação-->
+        <div class="div_formulario">
+            <h1>Deixe a sua avaliação da nossa empresa</h1>
+        </div>
+        <!--Div da avaliação-->
+        <div class="box_avaliacao">
+            <div>
+                <img src="/public/assets/css/imagens/fachada.png" alt=""> <!--Imagem da avaliação-->
+            </div>
+            <!--Div do formulário de avaliação-->
             <div class="box_formulario">
-                <form action="#" method="post"></form>
+                <form action="#" method="post"></form> <!--tag semântica-->
+                    <!--Div da caixa nome-->
                     <div class="box_nome">
-                        <label for="nome">Nome:</label>
+                        <label for="nome">Nome:</label> <!--Título nome-->
                         <br>
-                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"> <!--Box do nome-->
                     </div>
-                    <br>
+                    <br> <!--Tag responsável por quebra de linha-->
+                    <!--Div da caixa de envio da avaliação-->
                     <div class="box_questionario">
-                        <label for="avaliacao">Avaliação:</label>
+                        <label for="avaliacao">Avaliação:</label> <!--Título avaliação-->
                         <br>
-                        <textarea name="avaliacao" id="avaliacao" placeholder="Digite sua avaliação"></textarea>
+                        <textarea name="avaliacao" id="avaliacao" placeholder="Digite sua avaliação"></textarea> <!--Box da avaliaão-->
                     </div>
-                    <br>
-                    <button>Enviar</button>
+                    <br> <!--Tag responsável por quebra de linha-->
+                    <button>Enviar</button> <!--Botão enviar-->
                 </form>
             </div>
-       </div>
+        </div>
     </main>
 
+    <!--Rodapé da página-->
     <footer id="footer-header">
+        <!--Div do conteúdo principal-->
         <div id="footer_content">
+            <!--Div da coluna de contatos-->
             <div id="footer_contatos"> 
-                <h3>Entre em contato conosco</h3>
-                <p>Siga-nos em nossas redes sociais</p>
+                <h3>Entre em contato conosco</h3> <!--Título da coluna-->
+                <p>Siga-nos em nossas redes sociais</p> <!--Texto da coluna-->
+                <!--Div de contatos-->
                 <div id="footer_rede_social">
+                    <!--href responsável por levar ao whatsapp da empresa-->
                     <a  href="https://wa.me/whatsappphonenumber?text=urlencodedtext " class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-whatsapp"></i> <!--Imagem do whatsapp-->
                     </a>
+                     <!--href responsável por levar ao instagram da empresa-->
                     <a href="https://www.instagram.com/[nome_de_usuario]" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i> <!--Imagem do instagram-->
                     </a>
+                     <!--href responsável por levar ao facebook da empresa-->
                     <a href="https://www.facebook.com/[nome_de_usuario]" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f"></i> <!--Imagem do facebook-->
                     </a>
                 </div>
             </div>
+            <!--Div do mapa-->
             <div id="footer_mapa">
-                <h3>Localização no Mapa</h3>
-                <p>Veja nossa localização:</p>
+                <h3>Localização no Mapa</h3> <!--Título do mapa-->
+                <p>Veja nossa localização:</p> <!--Texto do mapa-->
+                <!--Mapa-->
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.6983281645844!2d-49.309997925082875!3d-16.641902684123632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef36e7354488f%3A0xcd463b86d2bf2847!2sUNIALFA%20Unidade%20Perimetral!5e0!3m2!1spt-BR!2sbr!4v1745476374732!5m2!1spt-BR!2sbr" width="1350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <!-- <div class="footer_mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.6983281645844!2d-49.309997925082875!3d-16.641902684123632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef36e7354488f%3A0xcd463b86d2bf2847!2sUNIALFA%20Unidade%20Perimetral!5e0!3m2!1spt-BR!2sbr!4v1745476374732!5m2!1spt-BR!2sbr" width="1350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
+            <!--Div da coluna do email-->
             <div id="footer_enviar">
+                <!--Div Dos elementos do email-->
                 <div id="input_group">
-                    <input type="email" id="email" placeholder="Seu e-mail">
-                    <button>
+                    <input type="email" id="email" placeholder="Seu e-mail"> <!--Caixa para colocar o email-->
+                    <button> <!--Botão de enviar o email-->
                         <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
             </div>
         </div> 
 
+        <!--Div do oonteúdo principal-->
         <div id="footer_copyright">
             &#169
-            Gean Barbearia 2025 .Todos os dieitos reservados
+            Gean Barbearia 2025 .Todos os direitos reservados
         </div>
     </footer>
-    <a href="#topo" class="voltar-topo" title="Voltar ao topo">↑</a>
+    <!--href responsável por voltar ao topo da página-->
+    <a href="#topo" class="voltar-topo" title="Voltar ao topo"> ↑</a>
 </body>
 </html>
