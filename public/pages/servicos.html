@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--Head da página-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/public/assets/css/servicos.css">
-    <title>Serviços - Gean Barbearia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!--Biblioteca para usar elementos no HTML e CSS-->
+    <link rel="stylesheet" href="/public/assets/css/servicos.css"> <!--Conexão entre o HTML com o CSS-->
+    <title>Serviços - Gean Barbearia</title> <!--Título da página-->
 </head>
-<body id="topo">
+<!--Body da página-->
+<body id="topo"> <!--Id referente ao botão de voltar ao topo-->
+    <!--Cabeçalho-->
     <header class="cabecalho">
-            <a href="index.html">
-            <img class="cabecalho-imagem" src="/public/assets/css/imagens/Logo01.png" alt=""> </a>
-            <nav class="cabecalho-menu">
-                <a href="servicos.html">Agende um serviço!</a>
-                <a href="#footer-header">Contatos</a>
-                <a href="feedback.html">Feedback</a>
-            </nav>
+        <!--href para voltar a página principal-->
+        <a href="index.html">
+        <img class="cabecalho-imagem" src="/public/assets/css/imagens/Logo01.png" alt=""> <!--Imagem da logo-->
+        </a>
+        <!--nav para navegar entre páginas-->
+        <nav class="cabecalho-menu">
+            <a href="servicos.html">Agende um serviço!</a> <!--href para ir ou voltar para a página de serviços-->
+            <a href="#footer-header">Contatos</a> <!--href para ir ou voltar para a aba de contato das páginas-->
+            <a href="feedback.html">Feedback</a> <!--href para ir ou voltar para a página de feedback-->
+        </nav>
     </header>
 
+    <!--Corpo da página-->
     <main>
+        <!--Div do ínicio serviço-->
         <div class="inicio-servicos">
+            <!--Div da imagem principal de fundo-->
             <div class="Imagem-fundo">
-                <img src="/public/assets/css/imagens/image-is-photo-interior-barbershop.png" alt="">
+                <img src="/public/assets/css/imagens/image-is-photo-interior-barbershop.png" alt=""> <!--Imagem principal de fundo-->
             </div>
-            <img class="imagem-elemento" src="/public/assets/css/imagens/elemento.png" alt="">
-           <div class="titulo"> <h1>Agende</h1>
-            <h1>seu Horário!</h1> </div>
-            <img class="imagem-utensilios" src="/public/assets/css/imagens/utensilios.png" alt="">
+            <img class="imagem-elemento" src="/public/assets/css/imagens/elemento.png" alt=""> <!--Imagem 1 secundária sobreposta á imagem principal-->
+            <!--Div que sobrepoem os títulos da imagem principal-->
+            <div class="titulo">
+                <h1>Agende</h1> <!--Título 1-->
+                <h1>seu Horário!</h1> <!--Título 2-->
+            </div>
+            <img class="imagem-utensilios" src="/public/assets/css/imagens/utensilios.png" alt=""> <!--Imagem 2 secundária sobreposta á imagem principal-->
         </div>
 
+        <!--Div da aba de serviços-->
         <div class="servicos">
+            <!--Div do serviço corte de cabelo-->
             <div class="corte_cabelo">
-                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
-                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern">
-                <h1>Corte de Cabelo</h1>
-                <br>
-                <p>R$30,00</p>
-                <button class="agendar-btn" data-nome-servico="Corte de Cabelo" data-valor-servico="30.00"><strong>Agendar</strong></button>
+                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white"> <!--Imagem da logo principal branca-->
+                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern"> <!--Imagem da pattern dos serviços-->
+                <h1>Corte de Cabelo</h1> <!--Título do serviço-->
+                <br> <!--Tag responsável por quebra de linha-->
+                <p>R$30,00</p> <!--Texto do preço do serviço-->
+                <button class="agendar-btn" data-nome-servico="Corte de Cabelo" data-valor-servico="30.00"><strong>Agendar</strong></button> <!--Botão com a tag Strong que deixa em negrito-->
             </div>
+            <!--Div do serviço corte de barba-->
             <div class="corte_barba">
-                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
-                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern">
-                <h1>Corte de Barba</h1>
-                <br>
-                <p>R$25,00</p>
-                <button class="agendar-btn" data-nome-servico="Corte de Barba" data-valor-servico="25.00"><strong>Agendar</strong></button>
+                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white"> <!--Imagem da logo principal branca-->
+                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern"> <!--Imagem da pattern dos serviços-->
+                <h1>Corte de Barba</h1> <!--Título do serviço-->
+                <br> <!--Tag responsável por quebra de linha-->
+                <p>R$25,00</p> <!--Texto do preço do serviço-->
+                <button class="agendar-btn" data-nome-servico="Corte de Barba" data-valor-servico="25.00"><strong>Agendar</strong></button> <!--Botão com a tag Strong que deixa em negrito-->
             </div>
+            <!--Div do serviço de química-->
             <div class="quimicas">
-                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
-                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern">
-                <h1>Químicos</h1>
-                <br>
-                <p>R$100,00</p>
-                <button class="agendar-btn" data-nome-servico="Químicos" data-valor-servico="100.00"><strong>Agendar</strong></button>
+                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white"> <!--Imagem da logo principal branca-->
+                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern"> <!--Imagem da pattern dos serviços-->
+                <h1>Químicos</h1> <!--Título do serviço-->
+                <br> <!--Tag responsável por quebra de linha-->
+                <p>R$100,00</p> <!--Texto do preço do serviço-->
+                <button class="agendar-btn" data-nome-servico="Químicos" data-valor-servico="100.00"><strong>Agendar</strong></button> <!--Botão com a tag Strong que deixa em negrito-->
             </div>
+            <!--Div do serviço de sobrancelha-->
             <div class="sombrancelha">
-                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white">
-                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern">
-                <h1>Sombrancelha</h1>
-                <br>
-                <p>R$10,00</p>
-                <button class="agendar-btn" data-nome-servico="Sobrancelha" data-valor-servico="10.00"><strong>Agendar</strong></button>
+                <img src="/public/assets/css/imagens/LOGO-WHITE.png" alt="" class="logo_white"> <!--Imagem da logo principal branca-->
+                <img src="/public/assets/css/imagens/Pattern_serviços.jpg" alt="" class="pattern"> <!--Imagem da pattern dos serviços-->
+                <h1>Sombrancelha</h1> <!--Título do serviço-->
+                <br> <!--Tag responsável por quebra de linha-->
+                <p>R$10,00</p> <!--Texto do preço do serviço-->
+                <button class="agendar-btn" data-nome-servico="Sobrancelha" data-valor-servico="10.00"><strong>Agendar</strong></button> <!--Botão com a tag Strong que deixa em negrito-->
             </div>
         </div>
 
+        <!--Parte não finalizada, integração com API e banco de dados-->
         <section id="agendamento-form-section" style="padding: 50px; background-color: #f0f0f0; margin-top: 50px; border-radius: 10px; max-width: 90%; margin-left: auto; margin-right: auto;">
             <h2 style="text-align: center; font-family: 'GrandParadiso-Regular', sans-serif; color: #2c2a2a; margin-bottom: 30px; font-size: 40px;">Agende seu Serviço</h2>
 
@@ -112,45 +130,58 @@
         </section>
     </main>
 
+    <!--Rodapé da página-->
     <footer id="footer-header">
+        <!--Div do conteúdo principal-->
         <div id="footer_content">
-            <div id="footer_contatos">
-                <h3>Entre em contato conosco</h3>
-                <p>Siga-nos em nossas redes sociais</p>
+            <!--Div da coluna de contatos-->
+            <div id="footer_contatos"> 
+                <h3>Entre em contato conosco</h3> <!--Título da coluna-->
+                <p>Siga-nos em nossas redes sociais</p> <!--Texto da coluna-->
+                <!--Div de contatos-->
                 <div id="footer_rede_social">
+                    <!--href responsável por levar ao whatsapp da empresa-->
                     <a  href="https://wa.me/whatsappphonenumber?text=urlencodedtext " class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-whatsapp"></i> <!--Imagem do whatsapp-->
                     </a>
+                     <!--href responsável por levar ao instagram da empresa-->
                     <a href="https://www.instagram.com/[nome_de_usuario]" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i> <!--Imagem do instagram-->
                     </a>
+                     <!--href responsável por levar ao facebook da empresa-->
                     <a href="https://www.facebook.com/[nome_de_usuario]" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f"></i> <!--Imagem do facebook-->
                     </a>
                 </div>
             </div>
+            <!--Div do mapa-->
             <div id="footer_mapa">
-                <h3>Localização no Mapa</h3>
-                <p>Veja nossa localização:</p>
+                <h3>Localização no Mapa</h3> <!--Título do mapa-->
+                <p>Veja nossa localização:</p> <!--Texto do mapa-->
+                <!--Mapa-->
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.6983281645844!2d-49.309997925082875!3d-16.641902684123632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef36e7354488f%3A0xcd463b86d2bf2847!2sUNIALFA%20Unidade%20Perimetral!5e0!3m2!1spt-BR!2sbr!4v1745476374732!5m2!1spt-BR!2sbr" width="1350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
+            <!--Div da coluna do email-->
             <div id="footer_enviar">
+                <!--Div Dos elementos do email-->
                 <div id="input_group">
-                    <input type="email" id="email" placeholder="Seu e-mail">
-                    <button>
+                    <input type="email" id="email" placeholder="Seu e-mail"> <!--Caixa para colocar o email-->
+                    <button> <!--Botão de enviar o email-->
                         <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
             </div>
-        </div>
+        </div> 
 
+        <!--Div do oonteúdo principal-->
         <div id="footer_copyright">
-            ©
-            Gean Barbearia 2025 .Todos os dieitos reservados
+            &#169
+            Gean Barbearia 2025 .Todos os direitos reservados
         </div>
     </footer>
+    <!--href responsável por voltar ao topo da página-->
     <a href="#topo" class="voltar-topo" title="Voltar ao topo"> ↑</a>
 
     <script src="/public/assets/js/agendamento.js"></script>
