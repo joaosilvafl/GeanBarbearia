@@ -1,4 +1,4 @@
-servicos_selects.sql:
+,servicos_selects.sql:
 
 SELECT
     id,
