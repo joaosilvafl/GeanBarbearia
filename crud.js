@@ -8,9 +8,9 @@ const PORT = 3000; // Porta do seu servidor Express (5432 é a do PostgreSQL)
 
 // --- Configuração da Conexão com o Banco de Dados ---
 const db = new Client({
-    user: 'arthu',
+    user: 'postgres',
     host: 'localhost',
-    database: 'geangbd',
+    database: 'barbearia',
     password: 'next23',
     port: 5432, // Porta padrão do PostgreSQL
 });
