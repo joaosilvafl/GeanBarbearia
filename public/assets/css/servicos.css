@@ -138,20 +138,20 @@ main{
 /*class servicos*/
 .servicos{
     display: grid; /*Display definido para grid*/
-    grid-auto-flow: column; 
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    position: relative;
-    padding-left: 100px;
-    padding-right: 160px;
+    grid-auto-flow: column; /*Posicionamento do elemento em um contâiner grid em coluna*/
+    overflow-x: auto; /* Habilita a rolagem horizontal (efeito de carrossel) */
+    overscroll-behavior-x: contain; /* Melhora a experiência de rolagem, impedindo-a de afetar a página */
+    scroll-snap-type: x mandatory; /* Faz a rolagem "travar" em cada item, como um carrossel */
+    scrollbar-width: none; /* Oculta a barra de rolagem visual */
+    flex-direction: row; /*Direção flexível do eixo principal definida como row*/
+    justify-content: center; /*Itens de um container grid alinhado no centro*/
+    align-items: flex-start; /*Itens alinhados como flex-start*/
+    gap: 40px; /*Gap definido em 40px*/
+    padding-top: 200px; /*Padding superior definido em 200px*/
+    padding-bottom: 200px; /*Padding inferior definido em 200px*/
+    position: relative; /*Posição definida como relativa*/
+    padding-left: 100px; /*padding da esquerda definido em 100px*/
+    padding-right: 160px; /*Padding da direita definido em 160px*/
 }
 
 /*class corte_cabelo*/
@@ -197,11 +197,12 @@ main{
     margin-left: 100px; /*Margem da direita definida como 100px*/
     height: 500px; /*Altura definida em 500px*/
     width: 350px; /*Largura definida em 350px*/
-    border-radius: 20px; 
-    z-index: 0;
+    border-radius: 20px; /*Arredondamento das bordas definido em 20px*/
+    z-index: 0; /*Define a ordem de empilhamento dos elementos*/
 }
 
-.servicos .corte_cabelo h1{ /*Esta é a parte de serviços do corte de cabelo do h1*/
+/*Esta é a parte de serviços do corte de cabelo do h1*/
+.servicos .corte_cabelo h1{ 
     font-family: "GrandParadiso-Regular", sans-serif; /*Defini a fonte do texto do h1*/
     color: white; /*Cores da fonte do h1*/
     margin-left: 125px;/*Margem a esquerda do h1*/
@@ -211,7 +212,8 @@ main{
     z-index: 2;/*Esta e a sobreposicao dos elementos no h1*/
 }
 
-.servicos .corte_cabelo p{ /*Esta é a parte de serviços do paragrafo*/
+/*Esta é a parte de serviços do paragrafo*/
+.servicos .corte_cabelo p{ 
     font-family: "GrandParadiso-Regular", sans-serif;/*Defini a fonte do texto dos servicoes de corte de cabelo do paragrafo*/
     color: white;/*Cores da fonte do paragrafo*/
     margin-left: 125px;/*Margem a esquerda do paragrafo*/
@@ -221,7 +223,8 @@ main{
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
-.servicos .corte_cabelo button{ /*Esta é a parte de serviços do corte de cabelo que esta no button*/
+/*Esta é a parte de serviços do corte de cabelo que esta no button*/
+.servicos .corte_cabelo button{ 
     position: absolute;/*Posicionamento da pagina de servicos do corte de cabelo do button*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no button*/
     font-size: 25px;/*Tamanho da fonte do texto do button*/
@@ -232,12 +235,14 @@ main{
     margin-top: 380px;/*Distancia da margem ao topo dos elementos do button*/
 }
 
-.servicos .corte_cabelo button:hover{ /*Esta é a parte de serviços do corte de cabelo que esta no button:hover*/
+/*Esta é a parte de serviços do corte de cabelo que esta no button:hover*/
+.servicos .corte_cabelo button:hover{ 
     background-color: #2c2a2a;/*Cores de fundo no button:hover*/
     color: white;/*Cores da fonte*/
 }
 
-.servicos .corte_barba .logo_white {/*Esta é a parte de serviços do corte de barba que esta no logo_white*/
+/*Esta é a parte de serviços do corte de barba que esta no logo_white*/
+.servicos .corte_barba .logo_white {
     position: absolute;/*Posicionamento da pagina do logo_white*/
     height: 125px;/*Altura do elemento na logo_white*/
     margin-left: 125px;/*Tamanho da margem a esquerda*/
@@ -245,7 +250,8 @@ main{
     z-index: 1;/*Esta e a sobreposicao dos elementos no logo_white*/
 }
 
-.servicos .corte_barba .pattern{/*Esta é a parte de serviços do corte de barba do pattern*/
+/*Esta é a parte de serviços do corte de barba do pattern*/
+.servicos .corte_barba .pattern{
     position: absolute;/*Posicionamento da pagina do pattern*/
     margin-left: 100px;/*Tamanho da margem para a esquerda*/
     height: 500px;/*Altura do elemento no pattern*/
@@ -254,146 +260,162 @@ main{
     z-index: 0;/*Esta e a sobreposicao dos elementos no pattern*/
 }
 
-.servicos .corte_barba h1{/**/
-    font-family: "GrandParadiso-Regular", sans-serif;/**/
-    color: white;/**/
-    margin-left: 125px;/**/
-    margin-top: 280px;/**/
-    font-size: 40px;/**/
+/*Tag h1 dentro da classe corte_barba dentro da classe servicos*/
+.servicos .corte_barba h1{
+    font-family: "GrandParadiso-Regular", sans-serif;/*Define a fonte da tag h1*/
+    color: white;/*Cor definida como branca*/
+    margin-left: 125px;/*Margem a esquerda definida em 125px*/
+    margin-top: 280px;/*Margem do topo definida em 200px*/
+    font-size: 40px;/*Tamanho da fonte definida em 40px*/
     position: absolute;/*Posicionamento da pagina do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
-.servicos .corte_barba p{/**/
-    font-family: "GrandParadiso-Regular", sans-serif;/**/
-    color: white;/**/
-    margin-left: 125px;/**/
-    margin-top: 310px;/**/
-    font-size: 35px;/**/
+/*Tag p dentro da class corte_barba dentro da classe servicos*/
+.servicos .corte_barba p{
+    font-family: "GrandParadiso-Regular", sans-serif;/*Define a fonte da tag p*/
+    color: white;/*Cor definida como branca*/
+    margin-left: 125px;/*Margem a direita definida em 125px*/
+    margin-top: 310px;/*margem do topo definida em 310px*/
+    font-size: 35px;/*Tamanho da fonte definida em 35px*/
     position: absolute;/*Posicionamento da pagina do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
-.servicos .corte_barba button{/**/
+/*Tag button dentro da classe corte_barba dentro da classe servicos*/
+.servicos .corte_barba button{
     position: absolute;/*Posicionamento da pagina do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
-    font-size: 25px;/**/
-    border-radius: 25px;/**/
-    background-color: rgb(220, 220, 220);/**/
-    padding: 16px 32px;/**/
-    margin-left: 125px;/**/
-    margin-top: 380px;/**/
+    font-size: 25px;/*Tamanho da fonte definida em 25px*/
+    border-radius: 25px;/*Arredonda as bordas do elemento*/
+    background-color: rgb(220, 220, 220);/*Cor de fundo*/
+    padding: 16px 32px;/*Padding definido em 16px e 32px*/
+    margin-left: 125px;/*Margem a esquerda definida em 125px*/
+    margin-top: 380px;/*Margem do topo definida em 300px*/
 }
 
-.servicos .corte_barba button:hover{/**/
-    background-color: #2c2a2a;/**/
-    color: white;/**/
+/*Tag button com um hover dentro da class corte_barba dentro da classe servicos*/
+.servicos .corte_barba button:hover{
+    background-color: #2c2a2a;/*Cor de fundo*/
+    color: white;/*Cor definida como branca*/
 }
 
-.servicos .quimicas .logo_white {/**/
-    position: absolute;/**/
+/*Classe logo_white dentro da classe quimicas dentro da classe servicos*/
+.servicos .quimicas .logo_white {
+    position: absolute;/*Posição definida como absoluta*/
     height: 125px;/*Posicionamento da pagina do paragrafo*/
-    margin-left: 125px;/**/
-    width: 100px;/**/
+    margin-left: 125px;/*Margem da esquerda definida em 125px*/
+    width: 100px;/*Largura definida em 100px*/
     z-index: 1;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
-.servicos .quimicas .pattern{/**/
+/*Classe pattern dentro da classe quimicas dentro da classe servicos*/
+.servicos .quimicas .pattern{
     position: absolute;/*Posicionamento da pagina do paragrafo*/
-    margin-left: 100px;/**/
-    height: 500px;/**/
-    width: 350px;/**/
-    border-radius: 20px;/**/
+    margin-left: 100px;/*Margem da esquerda definida em 100px*/
+    height: 500px;/*Altura definida em 500px*/
+    width: 350px;/*Largura definida em 350px*/
+    border-radius: 20px;/*Arredondamento das bordas definido em 20px*/
     z-index: 0;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
-.servicos .quimicas h1{/**/
-    font-family: "GrandParadiso-Regular", sans-serif;/**/
-    color: white;/**/
-    margin-left: 125px;/**/
-    margin-top: 280px;/**/
-    font-size: 40px;/**/
+/*Tag h1 dentro da classe quimicas dentro da classe servicos*/
+.servicos .quimicas h1{
+    font-family: "GrandParadiso-Regular", sans-serif;/*Define a fonte da tag h1*/
+    color: white;/*Cor definida como branca*/
+    margin-left: 125px;/*Margem da esquerda definida em 125px*/
+    margin-top: 280px;/*Margem do topo definida em 280px*/
+    font-size: 40px;/*Tamanho da fonte definido em 40px*/
     position: absolute;/*Posicionamento da pagina do h1*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no h1*/
 }
 
-.servicos .quimicas p{/**/
-    font-family: "GrandParadiso-Regular", sans-serif;/**/
-    color: white;/**/
-    margin-left: 125px;/**/
-    margin-top: 310px;/**/
-    font-size: 35px;/**/
+/*Tag p dentro da classe quimicas dentro da classe servicos*/
+.servicos .quimicas p{
+    font-family: "GrandParadiso-Regular", sans-serif;/*Fonte definida para a tag p*/
+    color: white;/*Cor definida como branca*/
+    margin-left: 125px;/*Margem da esquerda definida em 125px*/
+    margin-top: 310px;/*Margem superior definida em 310px*/
+    font-size: 35px;/*Tamanho da fonte definido em 35px*/
     position: absolute;/*Posicionamento da pagina de produtos quimicos do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos dos profutos quimicos no paragrafo*/
 }
 
+/*Tag button dentro da classe quimicas dentro da classe servicos*/
 .servicos .quimicas button{
     position: absolute;/*Posicionamento da pagina do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
-    font-size: 25px;
-    border-radius: 25px;
-    background-color: rgb(220, 220, 220);
-    padding: 16px 32px;
-    margin-left: 125px;
-    margin-top: 380px;
+    font-size: 25px; /*Tamanho da fonte definido em 25px*/
+    border-radius: 25px; /*Arredondamneto das bordas definido em 25px*/
+    background-color: rgb(220, 220, 220); /*Cor de fundo*/
+    padding: 16px 32px; /*Padding definido em 16px e 32px*/
+    margin-left: 125px; /*Margem da equerda definido em 125px*/
+    margin-top: 380px; /*MArgem superior definido em 380px*/
 }
 
+/*Tag button com um hover dentro da classe quimicas dentro da classe servicos*/
 .servicos .quimicas button:hover{
-    background-color: #2c2a2a;
-    color: white;
+    background-color: #2c2a2a; /*Cor de fundo*/
+    color: white; /*Cor definida como branca*/
 }
 
+/*Classe logo_white dentro da classe sombrancelha dentro da classe servicos*/
 .servicos .sombrancelha .logo_white {
     position: absolute;/*Posicionamento da pagina do paragrafo*/
-    height: 125px;
-    margin-left: 125px;
-    width: 100px;
+    height: 125px; /*Altura definido em 125px*/
+    margin-left: 125px; /*Margem da esquerda definido em 125px*/
+    width: 100px; /*Largura definido em 100px*/
     z-index: 1;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
+/*Classe pattern dentro da classe sombrancelha dentro da classe servicos*/
 .servicos .sombrancelha .pattern{
     position: absolute;/*Posicionamento da pagina do paragrafo*/
-    margin-left: 100px;
-    height: 500px;
-    width: 350px;
-    border-radius: 20px;
+    margin-left: 100px; /*Margem da direita definido em 100px*/
+    height: 500px; /*Altura definido em 500px*/
+    width: 350px; /*Largura definido em 350px*/
+    border-radius: 20px; /*Arredondamento das bordas definido em 20px*/
     z-index: 0;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
+/*Tag h1 dentro da classe servicos dentro da classe sombrancelha*/
 .servicos .sombrancelha h1{
-    font-family: "GrandParadiso-Regular", sans-serif;
-    color: white;
-    margin-left: 125px;
-    margin-top: 280px;
-    font-size: 40px;
+    font-family: "GrandParadiso-Regular", sans-serif; /*Fonte definida para a tag h1*/
+    color: white; /*Cor definida como branca*/
+    margin-left: 125px; /*Margem da esquerda definido em 125px*/
+    margin-top: 280px; /*Margem superior definido em 280px*/
+    font-size: 40px; /*Tamanho da fonte definido em 40px*/
     position: absolute;/*Posicionamento da pagina do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
+/*Tag p dentro da classe sombrancelha dentro da classe servicos*/
 .servicos .sombrancelha p{
-    font-family: "GrandParadiso-Regular", sans-serif;
-    color: white;
-    margin-left: 125px;
-    margin-top: 310px;
-    font-size: 35px;
+    font-family: "GrandParadiso-Regular", sans-serif; /*Fonte definida para a tag p*/
+    color: white; /*Cor definida como branca*/
+    margin-left: 125px; /*Margem da esquerda definida em 125px*/
+    margin-top: 310px; /*Margem superior definida em 310px*/
+    font-size: 35px; /*Tamanho da fonte definida em 35px*/
     position: absolute;/*Posicionamento da pagina do paragrafo*/
     z-index: 2;/*Esta e a sobreposicao dos elementos no paragrafo*/
 }
 
+/*Tag button dentro da classe sombrancelha dentro da classe servicos*/
 .servicos .sombrancelha button{
     position: absolute;/*Posicionamento da pagina de sombrancelhas do button*/
     z-index: 2;/*Esta e a sobreposicao dos elementos da sombrancelhas do button*/
-    font-size: 25px;
-    border-radius: 25px;
-    background-color: rgb(220, 220, 220);
-    padding: 16px 32px;
-    margin-left: 125px;
-    margin-top: 380px;
+    font-size: 25px; /*Tamanho da fonte definido em 25px*/
+    border-radius: 25px; /*Arredondamento das bordas definido em 25px*/
+    background-color: rgb(220, 220, 220); /*Cor de fundo definida*/
+    padding: 16px 32px; /*Padding definido em 16px e 32px*/
+    margin-left: 125px; /*Margen da esquerda definida em 125px*/
+    margin-top: 380px; /*Margem superior definida em 380px*/
 }
 
+/*Tag button com uma propriedade hover dentro da classe sombrancelha dentro da classe servicos*/
 .servicos .sombrancelha button:hover{
-    background-color: #2c2a2a;
-    color: white;
+    background-color: #2c2a2a; /*Cor de fundo definida*/
+    color: white; /*Cor definida como branca*/
 }
 
 /*Classe voltar-topo*/
@@ -551,31 +573,36 @@ footer{
 
 /*iframe da Id footer_mapa*/
 #footer_mapa iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  .voltar-topo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgb(100, 100, 100);
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
+    width: 100%; /*Largura definida em 100%*/
+    height: 100%; /*Altura definida em 100%*/
+    border: 0; /*Borda definida em 0*/
+}
 
-  .voltar-topo:hover {
-    background-color: black;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
+/*Classe voltar-topo*/
+.voltar-topo {
+    position: fixed; /*Posição definida como fixada*/
+    bottom: 20px; /*Parte inferior do elemento definida em 20px*/
+    right: 20px; /*Parte da direita definida em 20px*/
+    background-color: rgb(100, 100, 100); /*Cor de fundo definido*/
+    color: white; /*Cor definido como branca*/
+    padding: 10px 15px; /*Padding definido como 10px e 15px*/
+    text-decoration: none; /*Retira as decorações do texto*/
+    border-radius: 8px; /*Arredondamento dos cantos definido em 8px*/
+    font-weight: bold; /*Espessura do elemento definida como bold*/
+    transition: background-color 0.3s ease; /*Define uma transição suave quando a cor do background mudar*/
+}
 
-/* Novos estilos para a seção de agendamento na página de serviços */
+/*Classe voltar-topo com uma propriedade hover*/
+.voltar-topo:hover {
+    background-color: black; /*Cor de fundo definida como preta*/
+}
+
+/*Tag html*/
+html {
+    scroll-behavior: smooth; /*Faz com que o rolamento seja suave*/
+}
+
+/*Area que deve ser trabalhada*/
 #agendamento-form-section {
     padding: 50px;
     background-color: #f0f0f0;
